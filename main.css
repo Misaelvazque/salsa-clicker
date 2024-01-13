@@ -1,0 +1,153 @@
+.left {
+    float: left;
+    width: 60%;
+    user-select: none;
+}
+
+.Center {
+  width:200px;
+  height:200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  color: white !important;
+  font-size: 48px;
+}
+
+.right {
+    float: right;
+    width: 25%;
+    user-select: none;
+}
+body {
+    background: #35363a;
+    margin: 0;
+  }
+  #version {
+    color: white !important;
+  }
+  #clicker {
+    background-image: url(salsa.png);
+    background-size: contain;
+    position: relative;
+    transition: all .2s ease-in-out;
+    height: 256px;
+    width: 256px;
+  }
+  #clicker > .number {
+    z-index: 99;
+    font-size: 36px;
+    color: white;
+    position: absolute;
+  }
+
+  #clicker:hover {
+    cursor: pointer;
+    transition: 0.15s;
+    background-size: 100% 100%;
+    height:300px;
+    width: 300px;
+    animation: wiggle 1.25s;
+  }
+  
+  #clicker:active {
+    transform: scale(0.8);
+  }
+  
+  @keyframes wiggle {
+    0% {
+      transform: scale(1);
+    }
+    6.25% {
+      transform: scale(0.75);
+    }
+    8.75% {
+      transform: scale(0.7);
+    }
+    25% {
+      transform: scale(1);
+    }
+    32.5% {
+      transform: scale(0.95);
+    }
+    42.5% {
+      transform: scale(1);
+    }
+    52% {
+      transform: scale(0.97);
+    }
+    62% {
+      transform: scale(1);
+    }
+    72% {
+      transform: scale(0.98);
+    }
+    82% {
+      transform: scale(1);
+    }
+    93% {
+      transform: scale(0.99);
+    }
+  }  
+
+
+
+.scorecontainer {
+    background-color: rgb(238, 238, 238, 0.6);
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*.clickercontainer img {
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.clickercontainer img:hover { transform: scale(1.10); cursor: pointer; }
+.clickercontainer img:active { transform: scale(0.99); }*/
+.shopbutton {
+    background-color: #b5b5b5;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+.shopbutton:hover {
+    background-color: #c7c7c7;
+    transition: all .2s ease-in-out;
+}
+
+.shopbutton #image {
+    width: 25%;
+}
+
+.shopbutton img {
+    height: 64px;
+    width: 64px;
+}
+
+.shopbutton #nameandcost p {
+    margin: 0px;
+    width: 65%;
+}
+
+.shopbutton #nameandcost p:first-of-type {
+    font-size: 20px;
+}
+
+.shopbutton #amount {
+    font-size: 48px;
+    color: #595959;
+    width: 10%;
+    font-family: roboto;
+}
+#achievements img {
+  height: 64px;
+  width: 64px;
+}
